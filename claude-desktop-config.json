@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "item-mcp-server": {
+    "cloud-kitchen-mcp-server": {
       "command": "java",
       "args": [
         "-jar", "./target/item-mcp-server.jar"
