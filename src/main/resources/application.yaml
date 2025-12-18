@@ -1,0 +1,35 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: mcpServer
+
+  datasource:
+      url: jdbc:postgresql://localhost:5432/cloud_kitchen
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  ai:
+    mcp:
+      server:
+        type: SYNC
+        stdio: true
+        name: cloud-kitchen-mcp-server
+        version: 1.0.0
+
+  main:
+    web-application-type: none
+    banner-mode: off
+
+logging:
+  pattern:
+    console:

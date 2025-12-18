@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "item-mcp-server": {
+      "command": "java",
+      "args": [
+        "-jar", "./target/item-mcp-server.jar"
+      ]
+    }
+  }
+}
